@@ -1,24 +1,120 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Homepage</title>
-    <link rel="stylesheet" href="https://unpkg.com/98.css"
->
-  </head>
-  <body>
-    <h1>X-Men Contacts</h1>
-    <section>
-      <h2>Wolverine</h2>
-        <ul>
-            Phone Number: 200 0000 000
-            Email: grrrimsomad@gmail.com
-        </ul>
-        <p>
-            Crazy awesome guy he is so cool wow!
-        </p>
-    </section>
-    <script src="index.js"></script>
-  </body>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>X-Men Contacts</title>
+  <!-- 98.css CDN -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/98.css@0.1.21/98.min.css">
+  <style>
+    body {
+      padding: 20px;
+      background-color: #c3c7cb;
+      font-family: "ms sans serif", sans-serif;
+    }
+    section {
+      margin-bottom: 20px;
+      max-width: 300px;
+    }
+    ul {
+      list-style: none;
+      padding-left: 0;
+    }
+    .contact-btn {
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+  <h1>X-Men Contacts</h1>
+
+  <!-- Wolverine -->
+  <section class="window">
+    <div class="title-bar">
+      <div class="title-bar-text">Wolverine</div>
+      <div class="title-bar-controls">
+        <button aria-label="Minimize"></button>
+        <button aria-label="Maximize"></button>
+        <button aria-label="Close"></button>
+      </div>
+    </div>
+    <div class="window-body">
+      <ul>
+        <li><strong>Phone:</strong> 200 0000 000</li>
+        <li><strong>Email:</strong> grrrimsomad@gmail.com</li>
+      </ul>
+      <p>Crazy awesome guy he is so cool wow!</p>
+      <button class="contact-btn">Contact Now</button>
+    </div>
+  </section>
+
+  <!-- Cyclops -->
+  <section class="window">
+    <div class="title-bar">
+      <div class="title-bar-text">Cyclops</div>
+      <div class="title-bar-controls">
+        <button aria-label="Minimize"></button>
+        <button aria-label="Maximize"></button>
+        <button aria-label="Close"></button>
+      </div>
+    </div>
+    <div class="window-body">
+      <ul>
+        <li><strong>Phone:</strong> 201 1111 111</li>
+        <li><strong>Email:</strong> opticblast@xmen.com</li>
+      </ul>
+      <p>Leader of the team. Always serious and focused.</p>
+      <button class="contact-btn">Contact Now</button>
+    </div>
+  </section>
+
+  <!-- Storm -->
+  <section class="window">
+    <div class="title-bar">
+      <div class="title-bar-text">Storm</div>
+      <div class="title-bar-controls">
+        <button aria-label="Minimize"></button>
+        <button aria-label="Maximize"></button>
+        <button aria-label="Close"></button>
+      </div>
+    </div>
+    <div class="window-body">
+      <ul>
+        <li><strong>Phone:</strong> 202 2222 222</li>
+        <li><strong>Email:</strong> weatherqueen@xmen.com</li>
+      </ul>
+      <p>Can control the weather. Very elegant and powerful.</p>
+      <button class="contact-btn">Contact Now</button>
+    </div>
+  </section>
+
+  <!-- Jean Grey -->
+  <section class="window">
+    <div class="title-bar">
+      <div class="title-bar-text">Jean Grey</div>
+      <div class="title-bar-controls">
+        <button aria-label="Minimize"></button>
+        <button aria-label="Maximize"></button>
+        <button aria-label="Close"></button>
+      </div>
+    </div>
+    <div class="window-body">
+      <ul>
+        <li><strong>Phone:</strong> 203 3333 333</li>
+        <li><strong>Email:</strong> phoenix@xmen.com</li>
+      </ul>
+      <p>Telepathic and telekinetic. Very powerful mutant.</p>
+      <button class="contact-btn">Contact Now</button>
+    </div>
+  </section>
+
+  <script>
+    // Example: make Contact Now buttons show an alert
+    document.querySelectorAll('.contact-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        alert('Contacting the hero...');
+      });
+    });
+  </script>
+</body>
 </html>
